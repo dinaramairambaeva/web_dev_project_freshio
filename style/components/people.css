@@ -1,0 +1,78 @@
+.people{
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-text:not(.people-quote), .people-img, .people-feedback{
+    width: calc(50% - 30px);
+}
+
+
+
+.people-img > img{
+    width: 100%;
+}
+
+.people-text{
+    padding: 0 6%;
+}
+
+.people-text h2{
+    font-size: 35px;
+    color: #0a472e;
+    margin-bottom: 20px;
+}
+
+.people-text p{
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.people-feedback{
+    display: flex;
+}
+.people-quote span{
+    color: #aaa;
+}
+
+@media(max-width: 1400px){
+    .people-text:not(.people-quote), .people-img, .people-feedback{
+        width: 50%;
+    }
+}
+
+
+@media(max-width: 1000px){
+    .people-img{
+        display: none;
+    }
+
+    .people-text:not(.people-quote), .people-feedback{
+        width:100%;
+    }
+
+    .people-text{
+        padding: 0;
+    }
+
+    .people{
+        margin: 60px 0;
+    }
+}
+
+@media(max-width: 500px){
+    .people-text h2{
+        font-size: 25px;
+    }
+
+    .people{
+        margin: 0;
+        margin-top: 60px;
+    }
+
+    .people-feedback div:first-child{
+        display: none;
+    }
+}

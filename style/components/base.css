@@ -1,0 +1,29 @@
+body{
+    background-color: #fdf4ea;
+    padding: 0 5%;
+    background-image: url("../../img/top.jpg"), url("../../img/bottom.jpg");
+    background-size: contain, contain;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+
+    /* background: url(../../img/bottom.jpg) right bottom no-repeat, #fdf4ea, url(../../img/top.jpg) left top no-repeat; */
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    background-color: #fff;
+    padding: 0 5%;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+
+@media(max-width: 1000px){
+    body{
+        padding: 0;
+    }
+}

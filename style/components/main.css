@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "Dancing";
+    src: url("../../fonts/DancingScript-Bold.ttf");
+}
+
+.main{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    height: 35vw;
+}
+
+.main-slider{
+    width: calc(66% - 15px);
+    height: 100%;
+    position: relative;
+    padding: 100px;
+}
+
+.main-slider > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.main-items{
+    width: calc(34% - 15px);
+    height: 100%;
+}
+.main-items-top{
+    background-image: url("../../img/main_top.webp");
+    height: calc(50% - 15px);
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+}
+
+.main-items-top h2{
+    font-size: 24px;
+    line-height: 30px;
+    color: #0a472e;
+    margin-bottom: 30px;
+}
+
+.main-items-bottom{
+    background-image: url("../../img/main_bottom.webp");
+    height: calc(50% - 15px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-items-bottom h4{
+    font-family: 'Dancing';
+    font-size: 24px;
+    color: #fff;
+}
+.main-items-bottom h2{
+    color: #bac34e;
+    font-size: 40px;
+    margin: 15px 0;
+}
+.main-items-bottom p{
+    color:#fff;
+}
+
+.shop-button{
+    background-color: #bac34e;
+    padding: 12px 29px;
+    margin-top: 15px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.shop-button a{
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.shop-button i{
+    margin-left: 3px;
+    font-size: 8px;
+}
+.shop-button:hover{
+    background-color: #fff;
+}
+
+.shop-button:hover a{
+    color: #bac34e;
+}
+
+.main-slider h4{
+    font-family: 'Dancing';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #bac34e;
+}
+
+.main-slider h1{
+    font-size: 40px;
+    line-height: 45px;
+    color: #0a472e;
+    font-family: "Mazzard Soft H";
+    font-weight: 400;
+    margin: 40px 0;
+}
+
+.shop-link{
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    width: fit-content;
+    transition: .4s;
+}
+
+.shop-link a{
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.shop-link i{
+    margin-left: 3px;
+    font-size: 8px;
+    transition: .4s;
+}
+
+.shop-link:hover{
+    border-color: #bac34e;
+}
+
+.shop-link:hover a{
+    color: #bac34e;
+}
+
+.shop-link:hover i{
+    margin-left: 8px;
+}
+
+
+@media(max-width:1140px){
+    .main{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .main-slider{
+        width: 100%;
+    }
+    .main-items{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .main-items-top, .main-items-bottom{
+        width: calc(50% - 15px);
+        min-height: 300px;
+    }
+
+    .main-items-top{
+        padding: 5%;
+    }
+}
+
+@media(max-width: 650px){
+    .main-items{
+        flex-wrap: wrap;
+    }
+    .main-items-top, 
+    .main-items-bottom{
+        width: 100%;
+    }
+
+    .main-slider{
+        padding: 50px;
+        min-height: 350px;
+    }
+
+    .main-slider h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media(max-width: 350px){
+    .main-slider{
+        padding: 30px;
+        min-height: 300px;
+    }
+
+    .main-slider h1{
+        font-size: 20px;
+    }
+
+    .main-items-top, 
+    .main-items-bottom{
+        min-height: 250px;
+    }
+}
